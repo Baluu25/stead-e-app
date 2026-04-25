@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_card"
@@ -8,7 +9,6 @@
     android:padding="14dp"
     android:layout_marginBottom="10dp">
 
-    <!-- Title + Status -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +45,6 @@
         android:textSize="13sp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Progress bar -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -57,7 +56,6 @@
         android:progressBackgroundTint="@color/color_border"
         android:layout_marginBottom="6dp"/>
 
-    <!-- Values + Deadline -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +81,6 @@
 
     </LinearLayout>
 
-    <!-- Action buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -108,8 +105,7 @@
             android:textSize="12sp"
             android:textColor="@color/color_text_secondary"
             app:strokeColor="@color/color_border"
-            android:layout_marginEnd="6dp"
-            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+            android:layout_marginEnd="6dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDelete"
@@ -119,8 +115,7 @@
             android:text="Del"
             android:textSize="12sp"
             android:textColor="#CC3300"
-            app:strokeColor="#CC3300"
-            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+            app:strokeColor="#CC3300"/>
 
     </LinearLayout>
 
