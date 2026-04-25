@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:textColor="@color/color_text"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Stats row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_marginEnd="6dp">
+                <TextView
+                    android:id="@+id/tvTotalHabits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Habits"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_marginStart="6dp">
+                <TextView
+                    android:id="@+id/tvActiveHabits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Habits"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Streaks row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_marginEnd="6dp">
+                <TextView
+                    android:id="@+id/tvCurrentStreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 days"
+                    android:textColor="@color/color_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Streak"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_marginStart="6dp">
+                <TextView
+                    android:id="@+id/tvLongestStreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 days"
+                    android:textColor="@color/color_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longest Streak"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- This week -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Week"
+                android:textColor="@color/color_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/tvWeekCompletions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="completions"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- Category breakdown -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Category"
+                android:textColor="@color/color_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tvCategoryBreakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data yet"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.6"/>
+        </LinearLayout>
+
+        <!-- Weekly breakdown -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Completions"
+                android:textColor="@color/color_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tvWeeklyBreakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data yet"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.6"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
