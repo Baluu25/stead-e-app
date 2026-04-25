@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stead-E</string>
+    <string name="every_step_counts">Every step counts. Stay consistent!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="no_account">Don't have an account? Register</string>
+    <string name="have_account">Already have an account? Login</string>
+    <string name="home">Home</string>
+    <string name="habits">Habits</string>
+    <string name="goals">Goals</string>
+    <string name="statistics">Statistics</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+</resources>
